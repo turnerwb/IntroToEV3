@@ -4,12 +4,12 @@ This module is meant to be your first program that you've made for EV3.
   Make the robot say your name and then beep.
   Use the samples to learn the API calls needed (not much code to write)
 
-Authors: Dave Fisher and PUT_YOUR_NAME_HERE.
+Authors: Dave Fisher and Wesley Turner.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
-
+import ev3dev.ev3 as ev3
 
 # ------------------------------------------------------------------
-# TODO: 2. Make the robot say "David Fisher can write E V 3 programs"
+# DONE: 2. Make the robot say "David Fisher can write E V 3 programs"
 #   But of course use YOUR NAME.
 #
 #   Use the samples to figure out the necessary lines of code.
@@ -17,3 +17,8 @@ Authors: Dave Fisher and PUT_YOUR_NAME_HERE.
 #   Feel free to run it, change it, and run it again with any message you like.
 #   This program is simple, but if you can do this, then you have the tools to do FAR more.
 # ------------------------------------------------------------------
+def main():
+    ev3.Sound.speak("Hello World!").wait()
+
+
+main()
